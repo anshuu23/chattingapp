@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>sign-in</title>
+    <style>
+      body {
+        height: 100vh;
+        width: 100vw;
+        margin: 0;
+        padding: 0;
+        
+      }
+
+      .box {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        height: 30vh;
+        gap: 20px;
+
+        overflow: hidden;
+      }
+
+      header {
+        font-size: 30px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100vw;
+        background: linear-gradient(#397cf6, #00359d);      
+        height: 15vh; 
+      }
+
+      label {
+        font-size: 20px;
+
+        font-family: sans-serif;
+      }
+
+      input {
+        height: 100%;
+        width: 270px;
+        margin-left: 10px;
+        height: 30px;
+      }
+
+      .button {
+        height: 40px;
+        width: 90px;
+        margin: 20px;
+        border: none;
+        font-family: sans-serif;
+        background: linear-gradient(#397cf6, #00359d);      
+        
+      }
+      .info{
+        font-size: 18px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        max-width: 90%;
+        margin: auto;
+      }
+      form{
+       margin-top: 20px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <p >CHATTROOM</p>
+    </header>
+
+   <form action="main.html" method="get">
+    <div class="box">
+      <div class="smallbox"><label for="email">E-mail:</label><input type="email" name="email" id="email" required/></div>
+      <div class="smallbox"><label for="name" >NAME: </label><input type="text" id="name" name="name" required/></div>
+     <input type="submit" class="button">
+    </div> </form>
+
+
+      <div class="info">
+        <h3>Welcome to Our Real-Time Chatting Website with WebSockets!</h3>
+        <p> <p> Hey there! I'm excited to introduce you to a fun and engaging project I've been working on. My name is <b>Anshu</b>, and I've created a real-time chatting website where you can join a chatroom and engage in lively conversations with other users. Let me walk you through the key features and technologies behind this project.  </p>
+          <p> <b> Real-Time Chatting Experience:</b> <br>
+            With this website, you can experience the thrill of chatting in real-time. As soon as you send a message, it appears instantly for everyone in the chatroom. It's a fantastic way to connect, share ideas, and have fun with other like-minded individuals. </p>
+            
+           <p> <b> Front-End and Back-End Technologies:</b> <br>
+            The front-end of this website has been crafted using HTML, CSS, and JavaScript, ensuring a smooth and interactive user interface. On the back-end, I've leveraged the power of Node.js to handle server-side operations.  </p>
+            
+           <p> <b>WebSockets for Seamless Communication:</b> <br>
+            To make this real-time chatting experience possible, I've implemented WebSockets. WebSockets are a communication protocol that enables bidirectional, full-duplex communication between the client (your web browser) and the server. This means that information can flow back and forth instantaneously, providing a fast and efficient chatting experience. </p>
+            
+           <p><b> WebSockets vs. HTTP Server APIs:</b> <br>
+            WebSockets differ from traditional HTTP server APIs in a significant way. Unlike HTTP, which follows a request-response pattern, WebSockets establish a persistent connection between the client and the server. This persistent connection allows for real-time data streaming, eliminating the need for frequent HTTP requests and reducing latency. It enables instant message delivery, making your conversations feel more dynamic and engaging. </p>
+            
+          <p> <b> Secure Storage with MySQL Database: </b><br>
+            To ensure that your messages are securely stored, I've integrated a MySQL database into the backend. Every message you send is securely saved, allowing you to view past conversations and pick up where you left off. </p>
+            
+           <p> I hope this brief overview has piqued your interest! I understand that this project is just for fun and may not attract a large user base, but I'm excited to see how it works and the unique connections it might foster. If you have any questions or feedback, please feel free to reach out. Enjoy the real-time chatting experience on our website! </p>
+            
+            Best regards, <br>
+            Anshu</p>
+      </div>
+
+  </body>
+</html>

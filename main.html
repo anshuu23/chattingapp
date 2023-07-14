@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CHATROOM</title>
+    <style>
+        body{
+            height: 100vh;
+            display: grid;
+            grid-template-rows: 1fr 10fr 1.3fr;
+           
+        }
+        input{
+            height: 80%;
+            width:80%;
+            border:1px solid blue; 
+        }
+        button{
+            height: 80%;
+            width:18%;
+            background: linear-gradient(#397cf6, #00359d);      
+            border: none;
+        }
+      header{
+        font-size: 20px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100vw;
+        background: linear-gradient(#397cf6, #00359d);
+
+      }
+      *{
+        margin: 0;
+        overflow: hidden;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+       
+      }
+      .cover{
+        padding: 10px;
+        overflow: auto;
+        font-size: 20px;
+      }
+      .messagebox{
+        background-color:#64B5F6;;
+        margin: 10px;
+        border-radius: 20px;
+        max-width: fit-content;
+        float: right;
+        padding: 14px;
+        max-width: 70vw;
+        overflow: auto;
+        word-wrap: break-word; /* Add this line to break long words */
+      
+      }
+      .messagebox2{
+        background-color: #64B5F6;;
+        margin: 10px;
+        border-radius: 20px;
+        max-width: fit-content;
+        padding: 14px;
+        max-width: 70vw;
+        overflow: auto;
+        word-wrap: break-word; /* Add this line to break long words */
+        width: fit-content;
+        
+    }
+     main{
+        overflow: scroll;
+       
+     }
+     .messagename{
+      font-size: 15px;
+      color: #ea3333;
+      margin-top: 5px;
+     }
+    
+    </style>
+</head>
+<body>
+    <header><p>CHATTROOM</p></header>
+
+    <main>
+       
+    </main>
+
+    <footer>
+        <input type="text" id="message">
+        <button type="button" id="sendmessage" onclick="msgsend(displayName,displayEmail)" > send </button>
+    </footer>
+    <script src="frontend.js"></script>
+
+    
+</body>
+</html>
