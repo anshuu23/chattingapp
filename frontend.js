@@ -9,6 +9,11 @@ console.log(`Email: ${displayEmail}`);
 
 //connecting with backend using websocket
 const ws= new WebSocket ('wss://chatttingappp.onrender.com')
+document.querySelector('main').innerHTML=`<div style= "font-size:24px; margin:10px">loading....</div>`
+ws.addEventListener('open',(event)=>{
+    document.querySelector('main').textContent=``
+})
+
 
 function msgsend(displayName,displayEmail){
 const msg = document.querySelector('#message').value;
