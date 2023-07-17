@@ -60,6 +60,11 @@ ws.addEventListener('message',(event)=>{
     
     document.querySelector('main').scrollTop=document.querySelector('main').scrollHeight
     })
+    document.querySelector('input').addEventListener('keypress', function (e) {
+        if (e.key === 'Enter') {
+            msgsend(displayName,displayEmail)
+        }
+        });
 
 
 
